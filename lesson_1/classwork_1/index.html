@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>classwork_1</title>
+</head>
+<body>
+
+
+<script>
+
+    // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.
+
+    let arr = [1,2,3,2,3,1,2,8,9,10];
+
+    let result = arr[0]+arr[1]+arr[2]+arr[3]+arr[4]+arr[5]+arr[6]+arr[7]+arr[8]+arr[9];
+    console.log(result);
+
+
+    // 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+
+
+    let book = {
+        name: 'Dune',
+        numberOfPages : 350,
+        genre : 'fantasy'
+    };
+    console.log(book);
+
+
+    // 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+
+
+    let book2 = {
+        name: 'Dune',
+        numberOfPages: 350,
+        genre: 'fantasy',
+        author: 'Frank Herbert'
+    };
+    console.log(book2);
+
+    // 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+
+    let arrBook = [
+        {name: 'Dune',
+            numberOfPages: 350,
+            genre: 'fantasy',
+            author: 'Frank Herbert'},
+
+        {name: 'Children of Dune',
+            numberOfPages: 526,
+            genre: 'fantasy',
+            author: 'Frank Herbert'},
+
+    {name: 'Dune Messiah',
+        numberOfPages: 472,
+        genre: 'fantasy',
+        author: 'Frank Herbert'},
+    ];
+    console.log(arrBook[0]);
+    console.log(arrBook[1]);
+    console.log(arrBook[2]);
+
+    // 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значення площі зберігати в змінній s.
+
+    // Для того щоб розрахувати площу прямокутника (S), необхідно його довжину помножити на ширину.
+
+    let height = 23;
+    let width = 10;
+    let s = height*width;
+    console.log(s);
+
+    // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+    // результат помістіть у змінну v.
+
+    // Формула розрахунку об'єму циліндра через площу основи і висоту:
+    // Vциліндра=Sоснови*h, де Sоснови – площа основи, h – висота циліндра
+
+    let heightC = 10;
+    let dC = 4;
+    let v = heightC * dC;
+    console.log(v);
+
+    // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+    // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+
+    //         Формула Піфагора:
+    //
+    //          c2 = a2 + b2,
+    //         де с - довжина гіпотенузи, a і b - довжини катетів.
+    // Знаючи довжини катетів, по теоремі Піфагора можна знайти гіпотенузу прямокутного трикутника:
+    //
+    //     c = √ (a2 + b2)
+
+    let n = 3;
+    let m = 4;
+
+    let c= Math.sqrt(Math.pow(n,2)+Math.pow(m,2));
+    console.log(c);
+
+
+</script>
+</body>
+</html>

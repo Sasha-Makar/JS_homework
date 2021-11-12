@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_HOMEWORK_1</title>
+</head>
+<body>
+<script>
+
+    // 1.- Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+    //     Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+    let a = 'hello';
+    let b = 'owu';
+    let c = 'com';
+    let d = 'ua';
+    let e = 1;
+    let f = 10;
+    let g = -999;
+    let y = 123;
+    let r = 3.14;
+    let u = 2.7;
+    let i = 16;
+    let z = true;
+    let x = false;
+
+
+    // console.log()
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+    console.log(y);
+    console.log(r);
+    console.log(u);
+    console.log(i);
+    console.log(z);
+    console.log(x);
+
+    // alert
+
+    alert(a);
+    alert(b);
+    alert(c);
+    alert(d);
+    alert(e);
+    alert(f);
+    alert(g);
+    alert(y);
+    alert(r);
+    alert(u);
+    alert(i);
+    alert(z);
+    alert(x);
+
+     // document.write()
+
+     document.write(a);
+     document.write(b);
+     document.write(c);
+     document.write(d);
+     document.write(e);
+     document.write(f);
+     document.write(g);
+     document.write(y);
+     document.write(r);
+     document.write(u);
+     document.write(i);
+     document.write(z);
+     document.write(x);
+
+     // 2.- Переприсвоїти кожній змінній з завдання значення на довільне.
+     //    Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+    a = 45;
+    b = 'name';
+    c = 4.236;
+    d = 100500;
+    e = -65;
+    f = 'stalk';
+    g = true;
+    y = false;
+    r = 45778878787;
+    u = -595885455;
+    i = 'space';
+    z = -3.14;
+    x = 'google';
+
+    // console.log()
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+    console.log(y);
+    console.log(r);
+    console.log(u);
+    console.log(i);
+    console.log(z);
+    console.log(x);
+
+    // alert
+
+    alert(a);
+    alert(b);
+    alert(c);
+    alert(d);
+    alert(e);
+    alert(f);
+    alert(g);
+    alert(y);
+    alert(r);
+    alert(u);
+    alert(i);
+    alert(z);
+    alert(x);
+
+     // document.write()
+
+     document.write(a);
+     document.write(b);
+     document.write(c);
+     document.write(d);
+     document.write(e);
+     document.write(f);
+     document.write(g);
+     document.write(y);
+     document.write(r);
+     document.write(u);
+     document.write(i);
+     document.write(z);
+     document.write(x);
+
+     // 3.- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+
+    let firstName = 'Alexander';
+    let middleName = 'Igorovich';
+    let lastName = 'Makar';
+    let person = (`${firstName} ${middleName} ${lastName}`);
+    console.log(person);
+    let person2 = (firstName + " " + middleName + " " + lastName);
+    console.log(person2);
+
+    // 4. За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+
+
+    let yourName = prompt('enter your name');
+    let yourMiddleName = prompt('enter your middle name');
+    let yourAge = prompt('enter your age');
+    console.log(yourName, yourMiddleName, yourAge);
+     document.write(`Вітаю ${yourName} ${yourMiddleName} . Тобі ${yourAge} років.`+ '</br>');
+     document.write('Вітаю' + ' ' + yourName + ' ' + yourMiddleName + '.Тобі' +' ' + yourAge + ' ' + 'років');
+
+
+
+    // 5.- За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    //     let a = 100; let b = '100'; let c = true;
+
+    // Перевизначаю змінні a,b,c.
+
+
+    a = 100;
+    console.log(typeof a);
+    b = '100';
+    console.log(typeof b);
+    c = true;
+    console.log(typeof c);
+
+
+    // 6.- Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    //     В однакових виразах не використовувати однакові оператори!!!
+    //     5 ? 6 -> true
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 10 ? 10 -> true
+    // 10 ? 10 -> true
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 123 ? '123' -> false
+    // 123 ? '123' -> true
+
+    console.log(5 > 6);
+    console.log(5 === 6);
+    console.log(5 >= 6);
+    console.log(10 === 10);
+    console.log(10 == 10);
+    console.log(10 > 10);
+    console.log(10 < 10);
+    console.log(10 !== 10);
+    console.log(123 === '123');
+    console.log(123 == '123');
+
+
+    // 7.- Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    //     let str = "20";
+    // let a = 5;
+    // document.write(str + a + "<br/>");
+    // document.write(str - a + "<br/>");
+    // document.write(str * "2" + "<br/>");
+    // document.write(str / 2 + "<br/>");
+
+    205;
+
+    15;
+
+    40;
+
+    10;
+
+
+
+
+
+
+</script>
+</body>
+</html>
